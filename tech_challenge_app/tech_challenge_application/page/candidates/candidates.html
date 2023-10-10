@@ -1,0 +1,24 @@
+{% if data %}
+<table class="table table-striped table-hover tab">
+    <thead>
+    <tr class="thead_class">
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Experience</th>
+        <th scope="col">Status</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for d in data %}
+    <tr name="{{d.name}}" email ="{{d.email}}" experience="{{d.experience}}">
+        <td> {{ d.name }} </td>
+        <td> {{ d.email }} </td>
+        <td> {{ d.experience }} </td>
+        <td> {{ d.status }} </td>
+        <td style="color: blue"> <a id="edit"> Edit </a></td>
+    </tr>
+{% endfor%}
+    </tbody>
+</table>
+{% endif %}
+

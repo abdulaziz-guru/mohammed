@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include tech_challenge_app *.css
+recursive-include tech_challenge_app *.csv
+recursive-include tech_challenge_app *.html
+recursive-include tech_challenge_app *.ico
+recursive-include tech_challenge_app *.js
+recursive-include tech_challenge_app *.json
+recursive-include tech_challenge_app *.md
+recursive-include tech_challenge_app *.png
+recursive-include tech_challenge_app *.py
+recursive-include tech_challenge_app *.svg
+recursive-include tech_challenge_app *.txt
+recursive-exclude tech_challenge_app *.pyc
